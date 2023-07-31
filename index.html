@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tecno-FullStack</title>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet"  tybe="" href="estilos.css">
+
+</head>
+    <body id="homePage" >
+   
+     <header>
+       
+      <div class="container-fluid bg-dark py-1">
+            <div class="row bg-dark">
+                <div class="col-lg-6 col1" >
+                  <p class="info fst-italic text-center">Atencion al Cliente : 02324-420800</p>    
+                </div>
+                <div class="col-lg-6 col1">
+                  <p class="info fst-italic text-center" > Nuestra Direccion : Calle 29 y 24 </p>    
+                </div>      
+              </div>   
+      </div>
+
+      <nav class="navbar navbar-light bg-light navbar-expand-lg">
+            <div class="container bg-light py-3  border">
+              
+              <div class="modal fade" id="sesionuser">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- cabecera del diálogo -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Inicio de Sesion</h4>
+                      </div>
+                      <div class="modal-body">
+                          <label for="usuario">Nombre de usuario:</label>
+                          <input type="text" class="form-control" id="usuario" name="usuario">
+                      </div>
+                      <div class="modal-body">
+                          <label for="clave">Ingrese clave:</label>
+                          <input type="password" class="form-control" id="clave" name="clave">
+                      </div>
+                    <!-- pie del diálogo -->
+                      <div class="modal-footer">
+                          <a href="404.html" class="btn btn-lg btn-primary me-2" >Entrar</a>
+                          <button type="button" class="btn btn-lg btn-primary me-2" data-dismiss="modal">Cerrar</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="modal fade" id="registrouser">
+                  <div class="modal-dialog">
+                       <div class="modal-content">
+                          <!-- cabecera del diálogo -->
+                        
+                            <div class="modal-header">
+                                <h4 class="modal-title">Registrate ¿Ya tenés una cuenta?</h4>
+                                <button type="button" class="btn btn-link" data-dismiss="modal" data-toggle="modal" data-target="#sesionuser">Ingresar</button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <label for="usuario">Nombre</label>
+                                <input type="text" class="form-control" id="usuario" name="usuario">
+                            </div>
+                            <div class="modal-body">
+                                <label for="usuario">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="usuario">
+                            </div> 
+                            <div class="modal-body">
+                                <label for="usuario">E-Mail</label>
+                                <input type="text" class="form-control" id="mail" name="usuario">
+                            </div> 
+                            <div class="modal-body">
+                                <label for="clave">Ingrese clave:</label>
+                                <input type="password" class="form-control" id="clave" name="clave">
+                            </div>
+                          <!-- pie del diálogo -->
+                            <div class="modal-footer">
+                                  <a href="404.html" class="btn btn-lg btn-primary me-2 text-center" >CREAR CUENTA</a>
+                            </div>
+                        </div>  
+                    </div>  
+               </div>
+              
+               <a href="" class="navbar-brand"> Tecno-FullStack </a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbar" class="navbar-collapse mb-2 mb-lg-0 collapse show">
+                <ul class=" navbar-nav   mb-2  mb-lg-0  me-auto ">
+                  <li class="nav-item">
+                    <a href="#Sugerencias" class="nav-link">
+                      Destacados
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#Promociones" class="nav-link">
+                      Promociones
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#Categorias" class="nav-link">
+                      Categorias
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">
+                      Contacto
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">
+                      Nosotros
+                    </a>
+                  </li>  
+                       
+
+                </ul>
+
+                <form class=" mb-3 mb-lg-0  me-lg-2 ">
+                  <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Buscar texto aquí" aria-label="Search products here">
+                    <button type="submit" class="btn btn-secondary">
+                      <i class="bi-search" title="search" aria-hidden="true"> </i>
+                      <span class="sr-only d-none">Buscar
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              
+                <a href="#" class="btn btn-outline-light me-2" data-toggle="modal" data-target="#sesionuser">Ingresar</a>
+                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#registrouser">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    <!-- section hero-->
+
+    <!-- section carrousel -->
+    <section id="Promociones" class="mb-5">
+      <!--div class="container bg-light py-3  border"-->
+          
+          <!--h2>Promociones de la Semana</h2--> 
+           <div  class="container carousel slide pointer-event" data-bs-ride="carousel" id="carouselcontrol" >
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselcontrol" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselcontrol" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#carouselcontrol" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                <button type="button" data-bs-target="#carouselcontrol" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+              </div>
+              <div   class="carousel-inner" role="select">
+                    <div class="carousel-item active">
+                      <img src="fotos/promociones/promo2.webp" alt="Collection #1" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="fotos/promociones/promo1.webp" alt="Collection #2" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="fotos/promociones/promo3.webp" alt="Collection #3" class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                     <img src="fotos/promociones/promo4.jpg" alt="Collection #4" class="d-block img-fluid">
+                    </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#carouselcontrol" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#carouselcontrol" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+              </button>
+              
+            </div>
+        <!--/div-->      
+    </section>
+    <!--Fin --- Categorias por Sergio 28-04-2023----><!-- section de Categorias -->
+                       
+    <section id="Categorias" class="mb-5" >
+       <div class="container bg-light py-3  border">  
+             <div class="row align-items-center">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">                 
+                <a href="404.html">
+                  <img class="redondo img-fluid " src="fotos/promociones/categorias/bluetooth.webp"></img>
+                  <a href="404.html" class="btn btn-link" >Bluetooth</a>
+                </a>
+                              
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+                  <a href="404.html">
+                    <img class="redondo img-fluid " src="fotos/promociones/categorias/gamers.webp"></img>
+                    <a href="404.html" class="btn btn-link" >Gamers</a>
+                  </a>  
+                 
+                </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">        
+                    <a href="404.html">
+                      <img class="redondo img-fluid " src="fotos/promociones/categorias/headphone.webp"></img>
+                      <a href="404.html" class="btn btn-link" >Head phone</a>
+                    </a> 
+                
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+                  <a href="categoria.html">
+                    <img class="redondo img-fluid" src="fotos/promociones/categorias/hometheater.webp"></img>
+                    <a href="categoria.html" class="btn btn-link" >Home theater</a>
+                  </a> 
+                
+                </div>
+          </div>
+        </div>
+     </section>
+    
+      <!--Sugencia de Productos por Sergio 28-04-2023----><!-- section de Sugerencias o Articulos-->
+    <section id="Sugerencias" class="mb-5">
+        <div class="container bg-light py-3  border">  
+        <h1 class="display-5 mb-3"><i class="bi bi-info-square-fill"></i> Productos Destacados</h2>
+          <div class="row gy-md-4 justify-content-between">
+                              
+            <div class="col-md-6 col-xxl-4">
+                <div class="card mx-3 mb-2" style="width: 300px" center>
+                        <img class="card-img-top img-fluid" src="fotos/Bluetooth Speakers/foto1.webp" alt="Card image">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">FLECK 7 2 GEN</h4>
+                            <p class="card-text">Parlante</p>
+                            <p class="card-text">$5000</p>
+                            <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                        </div>
+                </div>
+            </div>
+            <div class=" col-md-6 col-xxl-4"> 
+                <div class=" card mx-3 mb-2" style="width:300px">
+                    <img class="card-img-top img-fluid " src="fotos/Headphones/foto6.webp" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title center ">BOHNE</h4>
+                        <p class="card-text ">Auriculares inalámbricos</p>
+                        <p class="card-text " >$3000</p>
+                        <a href="detalle1.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-6 col-xxl-4"> 
+                <div class="card mx-3 mb-2" style="width:300px">
+                    <img class="card-img-top img-fluid" src="fotos/HomeTheater/foto8.webp" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">ROHRE</h4>
+                        <p class="card-text">Parlante Barra De Sonido</p>
+                        <p class="card-text">$10000</p>
+                        <a href="detalle.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-6 col-xxl-4"> 
+              <div class="card mx-3 mb-2" style="width:300px">
+                  <img class="card-img-top img-fluid" src="fotos/Bluetooth Speakers/foto2.webp" alt="Card image">
+                  <div class="card-body text-center">
+                      <h4 class="card-title">FREI CHAIN TWS</h4>
+                      <p class="card-text">Parlante</p>
+                      <p class="card-text">$13000</p>
+                      <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                  </div>
+              </div>
+          </div>    
+        </div>
+   </div>
+</section>
+<!--Fin ---Sugencia de Productos por Sergio 28-04-2023---->
+<!-- footer links -- Agregado por Tobias 28-04-2023-->
+<footer class=" bg-dark py-3 text-white">   <!--cambio el bg-light por bg-dark y agrego el texto blanco-->
+  <div class="container">   <!--cambio clase foto por container-->              
+    <div class="row">
+          <div class="col-sm-6 col-lg-4">   <!--cambio col-lg-3 por col-lg-4 para que se divida en 3 columnas-->
+            <h6>Enlaces rápidos</h6>
+            <ul class="list-unstyled">
+              <li><a href="404.html">Hogar</a></li>
+              <li><a href="404.html">Tienda</a></li>
+              <li><a href="nosotros.html">Acerca de Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="#">Lista de deseos</a></li> 
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">   <!--cambio col-lg-3 por col-lg-4 para que se divida en 3 columnas-->
+            <h6>Información</h6>
+            <ul class="list-unstyled">
+              <li><a href="404.html">Preguntas frecuentes</a></li>
+              <li><a href="404.html">Sobre envíos</a></li>
+              <li><a href="404.html">Devoluciones</a></li>
+              <li><a href="404.html">Terminos de servicio</a></li>
+              <li><a href="404.html">Politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">   <!--cambio col-lg-3 por col-lg-4 para que se divida en 3 columnas-->
+            <h6>Contacto</h6>
+            <address>
+              <i class="bi-geo-alt text-primary"></i>
+              Unica Sucursal: Calle 29 N°575<br>    <!--corrijo la calle-->
+              CP:6600 - Mercedes (Buenas Aires)<br>
+            </address>
+              <i class="bi-telephone text-primary"></i>
+              <a href="tel:+1234567890">(2324)&nbsp;420800</a>    <!--corrijo teléfono-->
+              <br>
+              <i class="bi-envelope text-primary"></i>
+              <a href="mailto:info@tecno-fullstack.com">info@tecno-fullstack.com</a>    <!--corrijo mail-->
+            </address>
+          </div>
+          </div>
+                <ul class="icon list-unstyled">   <!--agrgo clase list-unstyled-->
+                  <a href="index.html"> <img src="logo.ico" class="imag" alt="..." width="200" height="220"></a>  <!--agrego link al inicio-->
+                  <li>
+                    <i class="bi-whatsapp text-primary"></i>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi-facebook text-primary"></i>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <i class="bi-instagram text-primary"></i>
+                  </li>
+                  <li>
+                    <i class="bi-twitter text-primary"></i></li>
+                  <li>
+                    <a href="https://www.youtube.com/" target="_blank"></a>
+                    <i class="bi-youtube text-primary"></i></li>
+                  <li><i class="bi-github text-primary "></i></li>
+                </ul>
+              </div class="copyright">
+              <div>
+              <h6>Copyright © 2023 Tecno-fullstack. Todos los derechos reservados.</h6>
+            </div>
+          </div>
+     </div>
+</div>      
+</footer>
+    <!-- Fin footer -- Agregado por Tobias 28-04-2023-->  
+     <script async="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
